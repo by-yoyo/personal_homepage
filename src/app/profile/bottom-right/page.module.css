@@ -1,0 +1,74 @@
+/* ============================================
+   右下角卡片 - GitHub仓库统计
+   ============================================ */
+
+/* 卡片容器 - 使用共享卡片样式 */
+.bottom-right-card {
+  background: var(--color-background);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border);
+}
+
+/* 仓库统计区域 */
+.repo-stats {
+  text-align: center;
+}
+
+/* 统计标题 */
+.stats-title {
+  margin: 0 0 var(--spacing-md) 0;
+  font-size: var(--font-size-xl);
+  color: var(--color-text);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* 仓库数量显示 */
+.repo-count {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+/* 数量数字 */
+.count-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+/* 数量标签 */
+.count-label {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+}
+
+/* 统计描述 */
+.stats-description {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+}
+
+/* ============================================
+   响应式设计
+   ============================================ */
+@media (max-width: 768px) {
+  .bottom-right-card {
+    padding: var(--spacing-md);
+  }
+  
+  .count-number {
+    font-size: 2rem;
+  }
+  
+  .stats-title {
+    font-size: var(--font-size-lg);
+  }
+}
